@@ -1,0 +1,318 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Mic_Array-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X02 J2
+U 1 1 5CE4B470
+P 4740 1710
+F 0 "J2" H 4740 1860 50  0000 C CNN
+F 1 "Mic1" V 4840 1710 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4740 1710 50  0001 C CNN
+F 3 "" H 4740 1710 50  0001 C CNN
+	1    4740 1710
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J4
+U 1 1 5CE4B518
+P 5850 1695
+F 0 "J4" H 5850 1845 50  0000 C CNN
+F 1 "Mic1_chip" V 5950 1695 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5850 1695 50  0001 C CNN
+F 3 "" H 5850 1695 50  0001 C CNN
+	1    5850 1695
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4940 1660 5300 1660
+Wire Wire Line
+	5300 1660 5300 1745
+Wire Wire Line
+	5300 1745 5650 1745
+Wire Wire Line
+	4940 1760 5465 1760
+Wire Wire Line
+	5465 1760 5465 1645
+Wire Wire Line
+	5465 1645 5650 1645
+$Comp
+L CONN_01X02 J1
+U 1 1 5CE4BFB9
+P 4735 2725
+F 0 "J1" H 4735 2875 50  0000 C CNN
+F 1 "Mic2" V 4835 2725 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4735 2725 50  0001 C CNN
+F 3 "" H 4735 2725 50  0001 C CNN
+	1    4735 2725
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J3
+U 1 1 5CE4BFBF
+P 5845 2710
+F 0 "J3" H 5845 2860 50  0000 C CNN
+F 1 "Mic2_chip" V 5945 2710 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5845 2710 50  0001 C CNN
+F 3 "" H 5845 2710 50  0001 C CNN
+	1    5845 2710
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J5
+U 1 1 5CE4C1DF
+P 6860 2715
+F 0 "J5" H 6860 2865 50  0000 C CNN
+F 1 "Mic4" V 6960 2715 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6860 2715 50  0001 C CNN
+F 3 "" H 6860 2715 50  0001 C CNN
+	1    6860 2715
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J7
+U 1 1 5CE4C1E5
+P 7970 2700
+F 0 "J7" H 7970 2850 50  0000 C CNN
+F 1 "Mic4_chip" V 8070 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7970 2700 50  0001 C CNN
+F 3 "" H 7970 2700 50  0001 C CNN
+	1    7970 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7060 2665 7420 2665
+Wire Wire Line
+	7420 2665 7420 2750
+Wire Wire Line
+	7420 2750 7770 2750
+Wire Wire Line
+	7060 2765 7585 2765
+Wire Wire Line
+	7585 2765 7585 2650
+Wire Wire Line
+	7585 2650 7770 2650
+$Comp
+L CONN_01X02 J6
+U 1 1 5CE4C3CF
+P 7025 1710
+F 0 "J6" H 7025 1860 50  0000 C CNN
+F 1 "Mic3" V 7125 1710 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7025 1710 50  0001 C CNN
+F 3 "" H 7025 1710 50  0001 C CNN
+	1    7025 1710
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J8
+U 1 1 5CE4C3D5
+P 8135 1695
+F 0 "J8" H 8135 1845 50  0000 C CNN
+F 1 "Mic3_chip" V 8235 1695 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8135 1695 50  0001 C CNN
+F 3 "" H 8135 1695 50  0001 C CNN
+	1    8135 1695
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7225 1660 7585 1660
+Wire Wire Line
+	7585 1660 7585 1745
+Wire Wire Line
+	7585 1745 7935 1745
+Wire Wire Line
+	7225 1760 7750 1760
+Wire Wire Line
+	7750 1760 7750 1645
+Wire Wire Line
+	7750 1645 7935 1645
+$Comp
+L CONN_01X02 J10
+U 1 1 5D169487
+P 3640 4160
+F 0 "J10" H 3640 4310 50  0000 C CNN
+F 1 "Mic1" V 3740 4160 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3640 4160 50  0001 C CNN
+F 3 "" H 3640 4160 50  0001 C CNN
+	1    3640 4160
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J12
+U 1 1 5D16948D
+P 4750 4145
+F 0 "J12" H 4750 4295 50  0000 C CNN
+F 1 "Mic1_chip" V 4850 4145 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4750 4145 50  0001 C CNN
+F 3 "" H 4750 4145 50  0001 C CNN
+	1    4750 4145
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3840 4110 4200 4110
+Wire Wire Line
+	4200 4110 4200 4195
+Wire Wire Line
+	4200 4195 4550 4195
+Wire Wire Line
+	3840 4210 4365 4210
+Wire Wire Line
+	4365 4210 4365 4095
+Wire Wire Line
+	4365 4095 4550 4095
+$Comp
+L CONN_01X02 J9
+U 1 1 5D169499
+P 3635 5175
+F 0 "J9" H 3635 5325 50  0000 C CNN
+F 1 "Mic2" V 3735 5175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3635 5175 50  0001 C CNN
+F 3 "" H 3635 5175 50  0001 C CNN
+	1    3635 5175
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J13
+U 1 1 5D1694A5
+P 5760 5165
+F 0 "J13" H 5760 5315 50  0000 C CNN
+F 1 "Mic4" V 5860 5165 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5760 5165 50  0001 C CNN
+F 3 "" H 5760 5165 50  0001 C CNN
+	1    5760 5165
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J15
+U 1 1 5D1694AB
+P 6870 5150
+F 0 "J15" H 6870 5300 50  0000 C CNN
+F 1 "Mic4_chip" V 6970 5150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6870 5150 50  0001 C CNN
+F 3 "" H 6870 5150 50  0001 C CNN
+	1    6870 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5960 5115 6320 5115
+Wire Wire Line
+	6320 5115 6320 5200
+Wire Wire Line
+	6320 5200 6670 5200
+Wire Wire Line
+	5960 5215 6485 5215
+Wire Wire Line
+	6485 5215 6485 5100
+Wire Wire Line
+	6485 5100 6670 5100
+$Comp
+L CONN_01X02 J14
+U 1 1 5D1694B7
+P 5925 4160
+F 0 "J14" H 5925 4310 50  0000 C CNN
+F 1 "Mic3" V 6025 4160 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5925 4160 50  0001 C CNN
+F 3 "" H 5925 4160 50  0001 C CNN
+	1    5925 4160
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 J16
+U 1 1 5D1694BD
+P 7035 4145
+F 0 "J16" H 7035 4295 50  0000 C CNN
+F 1 "Mic3_chip" V 7135 4145 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7035 4145 50  0001 C CNN
+F 3 "" H 7035 4145 50  0001 C CNN
+	1    7035 4145
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6125 4110 6485 4110
+Wire Wire Line
+	6485 4110 6485 4195
+Wire Wire Line
+	6485 4195 6835 4195
+Wire Wire Line
+	6125 4210 6650 4210
+Wire Wire Line
+	6650 4210 6650 4095
+Wire Wire Line
+	6650 4095 6835 4095
+Wire Wire Line
+	3835 5125 4270 5125
+Wire Wire Line
+	4270 5125 4270 5210
+Wire Wire Line
+	4270 5210 4545 5210
+Wire Wire Line
+	3835 5225 4375 5225
+Wire Wire Line
+	4375 5225 4375 5110
+$Comp
+L CONN_01X02 J11
+U 1 1 5D16949F
+P 4745 5160
+F 0 "J11" H 4745 5310 50  0000 C CNN
+F 1 "Mic2_chip" V 4845 5160 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4745 5160 50  0001 C CNN
+F 3 "" H 4745 5160 50  0001 C CNN
+	1    4745 5160
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4375 5110 4545 5110
+Wire Wire Line
+	4935 2675 5270 2675
+Wire Wire Line
+	5270 2675 5270 2760
+Wire Wire Line
+	5270 2760 5645 2760
+Wire Wire Line
+	4935 2775 5370 2775
+Wire Wire Line
+	5370 2775 5370 2660
+Wire Wire Line
+	5370 2660 5645 2660
+$EndSCHEMATC

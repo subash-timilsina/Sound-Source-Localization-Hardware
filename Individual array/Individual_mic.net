@@ -1,0 +1,53 @@
+(export (version D)
+  (design
+    (source "C:/Users/Subash Timilsina/Desktop/Test_project/Individual array/Individual_mic.sch")
+    (date "6/28/2019 1:16:34 PM")
+    (tool "Eeschema 4.0.6")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source Individual_mic.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref J1)
+      (value MIC)
+      (footprint Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm)
+      (libsource (lib conn) (part CONN_01X02))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5D15913E))
+    (comp (ref J2)
+      (value JST_CONN)
+      (footprint Connectors_JST:JST_EH_B02B-EH-A_02x2.50mm_Straight)
+      (libsource (lib conn) (part CONN_01X02))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5D15921E)))
+  (libparts
+    (libpart (lib conn) (part CONN_01X02)
+      (description "Connector, single row, 01x02, pin header")
+      (footprints
+        (fp Pin_Header_Straight_1X*)
+        (fp Pin_Header_Angled_1X*)
+        (fp Socket_Strip_Straight_1X*)
+        (fp Socket_Strip_Angled_1X*))
+      (fields
+        (field (name Reference) J)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive)))))
+  (libraries
+    (library (logical conn)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib")))
+  (nets
+    (net (code 1) (name /+ve)
+      (node (ref J1) (pin 1))
+      (node (ref J2) (pin 1)))
+    (net (code 2) (name /-ve)
+      (node (ref J1) (pin 2))
+      (node (ref J2) (pin 2)))))

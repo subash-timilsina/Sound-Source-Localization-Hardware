@@ -8,7 +8,7 @@ void Wheel::init()
 	sei();
 	initUART0();
 	initUART3();
-	robot_rpm = 200;
+	robot_rpm = 100;
 	for(int i=0;i<3;i++)
 	{
 		velocity_motor[i] = 0;
@@ -26,7 +26,7 @@ void Wheel::preprocess_data()
 	{
 		azimuth = rcvdata[0] + rcvdata[1];
 	}
-	else 
+	else
 	{
 		azimuth = -(rcvdata[0] + rcvdata[1]);
 	}
@@ -40,7 +40,7 @@ void Wheel::preprocess_data()
 	else
 	{
 		elevation = -(rcvdata[2] + rcvdata[3]);
-	}	
+		}	
 	
 }
 
@@ -83,10 +83,27 @@ void Wheel::get_joystick_data()
 	
 	if(!rcvflag)
 		preprocess_data();
+		
 	
-	velocity_robot[1] = robot_rpm * cos(azimuth);
-	velocity_robot[0] = -robot_rpm * sin(azimuth);
+	if (rcvdata[4] == 1)
+	{
+		velocity_robot[0] = -robot_rpm * sin(azimuth*(PI/180.0));
+		velocity_robot[1] = robot_rpm * cos(azimuth*(PI/180.0));
+	}
+	else if (rcvdata[4] == 90)
+	{
+		velocity_robot[0] = 0;
+		velocity_robot[1] = 0;
+	}
 	
+	//UART0TransmitData(azimuth);
+	//UART0Transmit('\t');
+	//UART0TransmitData(elevation);
+	//UART0Transmit('\t');
+	//UART0TransmitData(velocity_robot[0]);
+	//UART0Transmit('\t');
+	//UART0TransmitData(velocity_robot[1]);
+	//UART0TransmitString("\n\r");
 	
 }
 

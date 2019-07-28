@@ -10,6 +10,7 @@
 #define F_CPU 16000000UL
 #endif
 
+#define PI			  3.14159
 #define MAX_RPM		   400.0							//In RPM	
 
 
